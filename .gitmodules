@@ -1,0 +1,3 @@
+[submodule "sqoop"]
+	path = sqoop
+	url = https://github.com/Altiscale/sqoop.git
