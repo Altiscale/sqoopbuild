@@ -13,9 +13,11 @@ cd ${RPM_BUILD_DIR}
 tar -xvzpf ${WORKSPACE}/sqoop/build/sqoop-${ARTIFACT_VERSION}.tar.gz
 ln -s sqoop-${ARTIFACT_VERSION} sqoop
 mv sqoop/conf/* ${RPM_CONFIG_DIR}
+rm -rf sqoop/conf
 ln -s ${RPM_CONFIG_DIR} sqoop/conf 
 
 cd ${RPM_CONFIG_DIR}
+cd ..
 ln -s sqoop-${ARTIFACT_VERSION} sqoop
 
 cd ${RPM_DIR}
