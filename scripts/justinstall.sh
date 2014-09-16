@@ -7,7 +7,7 @@ export RPM_BUILD_DIR=${INSTALL_DIR}/opt
 mkdir --mode=0755 -p ${RPM_BUILD_DIR}
 
 export RPM_CONFIG_DIR=${INSTALL_DIR}/etc/sqoop-${ARTIFACT_VERSION}
-mkdir --mode=0755 -p ${RPM_BUILD_DIR}
+mkdir --mode=0755 -p ${RPM_CONFIG_DIR}
 
 cd ${RPM_BUILD_DIR}
 tar -xvzpf ${WORKSPACE}/sqoop/build/sqoop-${ARTIFACT_VERSION}.tar.gz
